@@ -1,0 +1,8 @@
+internet
+unix
+bash
+cafe
+arroz
+feijao
+macarrao
+ovo

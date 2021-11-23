@@ -1,0 +1,11 @@
+h1 {
+    text-align: center;
+}
+
+li:hover {
+ background-color: green;
+}
+
+li:active {
+    font-family: monospace;
+}

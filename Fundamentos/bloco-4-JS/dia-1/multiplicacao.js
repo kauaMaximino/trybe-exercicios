@@ -3,4 +3,4 @@ let num2 = 10
 
 let resultado = num1 * num2
 
-console(resultado)
+console.log(resultado)

@@ -1,13 +1,16 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers = [3, 5, 9, 7, 70, 8, 100, 2, 2];
 let impares = [];
-let imparesTotais = impares.length;
 
 for (var i = 0; i < numbers.length; i++) {
   if (numbers[i] % 2 === 1) {
     impares.push(numbers[i]);
-  } else {
-    console.log("Não existe números ímpares");
   }
 }
 
-console.log()
+if (impares.length === 0) {
+  console.log("Não existe valores ímpares");
+}
+
+if (impares.length > 0) {
+  console.log(impares)
+}

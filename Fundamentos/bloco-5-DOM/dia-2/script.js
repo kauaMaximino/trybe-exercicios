@@ -1,8 +1,13 @@
 let body = document.querySelector('#body');
 
-let h1 = document.createElement('h1');
-body.appendChild(h1);
+let h1Create = document.createElement('h1');
+body.appendChild(h1Create);
 
-let main = document.createElement('main')
-body.appendChild(main);
-main.className = 'main-content'
+let mainCreate = document.createElement('main')
+body.appendChild(mainCreate);
+mainCreate.className = 'main-content'
+
+let main = document.querySelector('.main-content')
+let sectionCreate = document.createElement('section')
+main.appendChild(sectionCreate);
+sectionCreate.className = 'center-content'

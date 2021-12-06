@@ -11,3 +11,7 @@ let main = document.querySelector('.main-content')
 let sectionCreate = document.createElement('section')
 main.appendChild(sectionCreate);
 sectionCreate.className = 'center-content'
+
+let section = document.querySelector('.center-content')
+let pCreator = document.createElement('p')
+section.appendChild(pCreator);

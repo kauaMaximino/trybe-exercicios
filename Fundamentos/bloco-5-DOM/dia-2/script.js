@@ -1,6 +1,5 @@
-let body = document.querySelector('#body');
-
 let h1Create = document.createElement('h1');
+h1Create.innerHTML = 'Exercício 5.2 - JavaScript DOM'
 body.appendChild(h1Create);
 
 let mainCreate = document.createElement('main')
@@ -14,4 +13,9 @@ sectionCreate.className = 'center-content'
 
 let section = document.querySelector('.center-content')
 let pCreator = document.createElement('p')
+pCreator.innerHTML = 'algum texto'
 section.appendChild(pCreator);
+
+let sectionLeft = document.createElement('section')
+main.appendChild(sectionLeft);
+sectionLeft.className = 'left-content'

@@ -13,9 +13,13 @@ sectionCreate.className = 'center-content'
 
 let section = document.querySelector('.center-content')
 let pCreator = document.createElement('p')
-pCreator.innerHTML = 'algum texto'
+pCreator.innerHTML = 'lorem'
 section.appendChild(pCreator);
 
 let sectionLeft = document.createElement('section')
 main.appendChild(sectionLeft);
 sectionLeft.className = 'left-content'
+
+let sectionRight = document.createElement('section')
+main.appendChild(sectionRight);
+sectionRight.className = 'right-content'

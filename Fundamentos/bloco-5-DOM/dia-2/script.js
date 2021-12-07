@@ -54,3 +54,5 @@ createH3Three.className = 'description'
 main.appendChild(createH3)
 main.appendChild(createH3Two)
 main.appendChild(createH3Three)
+
+main.removeChild(sectionLeft)

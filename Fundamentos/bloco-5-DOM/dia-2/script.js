@@ -57,5 +57,7 @@ main.appendChild(createH3Three)
 
 main.removeChild(sectionLeft)
 
-const sectionRightContent = document.querySelector('.right-content');
+let sectionRightContent = document.querySelector('.right-content');
 sectionRightContent.style.marginRight='auto';
+
+main.style.backgroundColor = 'green';

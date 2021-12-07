@@ -1,4 +1,5 @@
 let h1Create = document.createElement('h1');
+h1Create.className = 'title'
 h1Create.innerHTML = 'Exercício 5.2 - JavaScript DOM'
 body.appendChild(h1Create);
 

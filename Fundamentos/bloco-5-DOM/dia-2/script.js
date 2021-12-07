@@ -27,4 +27,20 @@ main.appendChild(sectionRight);
 let img = document.createElement('img')
 img.className = 'small-image'
 img.src = 'https://picsum.photos/200'
-section.appendChild(img)
+sectionLeft.appendChild(img)
+
+let list = document.createElement('ul')
+list.className = 'list-right'
+sectionRight.appendChild(list)
+
+let = listNumbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+let ulList = document.querySelector('.list-right')
+
+for (let i = 0; i < listNumbers.length; i +=1) {
+    let number = listNumbers[i]
+
+    let numbersResults = document.createElement('li')
+    numbersResults.innerHTML = number
+
+    ulList.appendChild(numbersResults)
+}

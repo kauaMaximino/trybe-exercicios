@@ -42,6 +42,7 @@ for (let i = 0; i < listNumbers.length; i +=1) {
 
     let numbersResults = document.createElement('li')
     numbersResults.innerHTML = number
+    numbersResults.className = 'umADez'
 
     ulList.appendChild(numbersResults)
 }
@@ -61,3 +62,13 @@ let sectionRightContent = document.querySelector('.right-content');
 sectionRightContent.style.marginRight='auto';
 
 main.style.backgroundColor = 'green';
+
+// let tenNumers = document.querySelectorAll('.umADez')
+// for (let i = 0; i < tenNumers.length; i +=1) {
+//     if (tenNumers[i] === 'nove' || tenNumers[i] === 'dez'){
+//         ulList.removeChild(tenNumers[i])
+//     }
+// }
+
+ulList.lastChild.remove();
+ulList.lastChild.remove();

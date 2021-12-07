@@ -48,6 +48,9 @@ for (let i = 0; i < listNumbers.length; i +=1) {
 let createH3 = document.createElement('h3')
 let createH3Two = document.createElement('h3')
 let createH3Three = document.createElement('h3')
+createH3.className = 'description'
+createH3Two.className = 'description'
+createH3Three.className = 'description'
 main.appendChild(createH3)
 main.appendChild(createH3Two)
 main.appendChild(createH3Three)

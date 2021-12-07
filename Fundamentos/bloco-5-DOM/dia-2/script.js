@@ -44,3 +44,9 @@ for (let i = 0; i < listNumbers.length; i +=1) {
 
     ulList.appendChild(numbersResults)
 }
+let createH3 = document.createElement('h3')
+let createH3Two = document.createElement('h3')
+let createH3Three = document.createElement('h3')
+main.appendChild(createH3)
+main.appendChild(createH3Two)
+main.appendChild(createH3Three)

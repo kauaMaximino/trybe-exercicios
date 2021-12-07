@@ -56,3 +56,6 @@ main.appendChild(createH3Two)
 main.appendChild(createH3Three)
 
 main.removeChild(sectionLeft)
+
+const sectionRightContent = document.querySelector('.right-content');
+sectionRightContent.style.marginRight='auto';

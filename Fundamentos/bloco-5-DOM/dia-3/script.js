@@ -55,3 +55,34 @@ function createDayMonth() {
 }
 
 createDayMonth()
+
+function createHolidays(buttonName) {
+  let getHolidays = document.querySelector('.buttons-container')
+  let newButton = document.createElement('button')
+  let newButtonID = 'btn-holiday'
+
+  newButton.innerHTML = buttonName
+  newButton.id = newButtonID
+  getHolidays.appendChild(newButton)
+}
+
+createHolidays('Feriados')
+
+function clickHolidays() {
+  let holidayButton = document.querySelector('#btn-holiday');
+  let getHolidays = document.querySelectorAll('.holiday');
+  let backgroundColor = 'rgb(238,238,238)';
+  let setColor = 'white';
+
+  holidayButton.addEventListener('click', function() {
+    for(let i = 0; i < getHolidays.length; i +=1) {
+      if (getHolidays[i].style.backgroundColor === setColor) {
+        getHolidays[i].style.backgroundColor = backgroundColor
+      } else {
+        getHolidays[i].style.backgroundColor = setColor;
+      }
+    }
+  } )
+}
+
+clickHolidays()

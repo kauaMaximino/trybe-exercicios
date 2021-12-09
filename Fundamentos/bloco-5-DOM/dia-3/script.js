@@ -19,6 +19,7 @@ function createDaysOfTheWeek() {
   }
 }
 
+// funcção que cria dias do mês
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
@@ -56,6 +57,7 @@ function createDayMonth() {
 
 createDayMonth()
 
+//funcão que cria botão "Feriado"
 function createHolidays(buttonName) {
   let getHolidays = document.querySelector('.buttons-container')
   let newButton = document.createElement('button')
@@ -68,6 +70,7 @@ function createHolidays(buttonName) {
 
 createHolidays('Feriados')
 
+// funcão que cria evento de click no botão feriado
 function clickHolidays() {
   let holidayButton = document.querySelector('#btn-holiday');
   let getHolidays = document.querySelectorAll('.holiday');
@@ -86,3 +89,17 @@ function clickHolidays() {
 }
 
 clickHolidays()
+
+//funcão que cria evento de click no botão sexta-feita
+function createFridays(buttonName) {
+  let getFridays = document.querySelector('.buttons-container')
+  let newButton = document.createElement('button')
+  let newButtonID = 'btn-friday'
+
+  newButton.innerHTML = buttonName
+  newButton.id = newButtonID
+  getFridays.appendChild(newButton)
+}
+
+createFridays('Sexta-feira')
+

@@ -97,7 +97,7 @@ function createFridays(buttonName) {
   let newButtonID = 'btn-friday'
 
   newButton.innerHTML = buttonName
-  ewButton.id = newButtonID
+  newButton.id = newButtonID
   getFridays.appendChild(newButton)
 }
 

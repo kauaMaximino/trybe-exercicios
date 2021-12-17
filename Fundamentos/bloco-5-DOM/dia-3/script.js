@@ -90,7 +90,7 @@ function clickHolidays() {
 
 clickHolidays()
 
-//funcão que cria evento de click no botão sexta-feita
+//funcão que cria botão "sexta-feita"
 function createFridays(buttonName) {
   let getFridays = document.querySelector('.buttons-container')
   let newButton = document.createElement('button')
@@ -103,3 +103,22 @@ function createFridays(buttonName) {
 
 createFridays('Sexta-feira')
 
+// funcão que cria evento de click no botão sexta-feira
+function clickFridays() {
+  let fridayButton = document.querySelector('#btn-friday');
+  let getFridays = document.querySelectorAll('.friday');
+  let backgroundColor = 'rgb(238,238,238)';
+  let setColor = 'white';
+
+  fridayButton.addEventListener('click', function() {
+    for(let i = 0; i < getFridays.length; i +=1) {
+      if (getFridays[i].style.backgroundColor === setColor) {
+        getFridays[i].style.backgroundColor = backgroundColor
+      } else {
+        getFridays[i].style.backgroundColor = setColor;
+      }
+    }
+  } )
+}
+
+clickFridays()

@@ -104,21 +104,21 @@ function createFridays(buttonName) {
 createFridays('Sexta-feira')
 
 // funcão que cria evento de click no botão sexta-feira
-function clickFridays() {
-  let fridayButton = document.querySelector('#btn-friday');
-  let getFridays = document.querySelectorAll('.friday');
-  let backgroundColor = 'rgb(238,238,238)';
-  let setColor = 'white';
+function displayFridays(fridaysArray) {
+  let getFridayButton = document.querySelector('#btn-friday');
+  let fridays = document.getElementsByClassName('friday');
+  let newFridayText = 'SEXTOU o/';
 
-  fridayButton.addEventListener('click', function() {
-    for(let i = 0; i < getFridays.length; i +=1) {
-      if (getFridays[i].style.backgroundColor === setColor) {
-        getFridays[i].style.backgroundColor = backgroundColor
-      } else {
-        getFridays[i].style.backgroundColor = setColor;
+  getFridayButton.addEventListener('click', function() {
+  for (let index = 0; index < fridays.length; index += 1) {
+    if (fridays[index].innerHTML !== newFridayText) {
+        fridays[index].innerHTML = newFridayText;
+    } else {
+        fridays[index].innerHTML = fridaysArray[index];
       }
     }
-  } )
-}
+  })
+};
 
-clickFridays()
+let dezFridays = [ 4, 11, 18, 25 ];
+displayFridays(dezFridays);

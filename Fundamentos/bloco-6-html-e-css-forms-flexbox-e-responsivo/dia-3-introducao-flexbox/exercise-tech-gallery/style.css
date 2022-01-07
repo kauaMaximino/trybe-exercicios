@@ -35,11 +35,16 @@
   justify-content: center;
 }
 
+#id {
+  margin: 10px 0px;
+}
+
 .img-container {
   margin: auto;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 590px; 
@@ -47,5 +52,31 @@
 
 div {
   text-align: center;
-  margin: 10px;
+  background-color: rgb(241, 238, 238);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 3px rgb(168, 162, 162);
+}
+
+div img {
+  height: 150px;
+}
+
+h4 {
+  padding: 5px;
+}
+
+#line {
+  margin: auto;
+  width: 150px;
+  height: 4px;
+  background-color: rgb(224, 221, 221);
+  margin-bottom: 20px
+}
+
+footer {
+  display: flex;
+  margin: auto;
+  justify-content: center;
 }

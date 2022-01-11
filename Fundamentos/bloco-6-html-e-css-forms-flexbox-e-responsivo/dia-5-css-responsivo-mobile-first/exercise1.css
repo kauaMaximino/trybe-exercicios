@@ -70,3 +70,11 @@ figcaption {
         border-radius: 5px;
     }
 }
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    body {
+        background-color: rgb(172, 134, 153);
+        font-size: 32px;
+        margin: 1.8em;
+    }
+}

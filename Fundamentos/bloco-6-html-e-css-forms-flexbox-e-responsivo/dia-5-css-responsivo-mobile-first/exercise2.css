@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media (max-width: 640px) {
+    header p {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .aside-one h2 {
+        text-align: center;
+    }
+
+    .aside-two h2 {
+        text-align: center;
+    }
+
+    .main-content h1 {
+        text-align: center;
+    }
+
+    .main-content p, footer p {
+        text-indent: 1em;
+        margin: 16px;
+        text-align: justify;
+    }
+
+    footer h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1007px) {
+    
+}
+
+@media (min-width: 1008px) {
+    
+}

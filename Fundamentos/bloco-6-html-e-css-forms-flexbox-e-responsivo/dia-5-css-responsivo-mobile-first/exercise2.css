@@ -37,8 +37,17 @@ html {
     }
 }
 
-@media (max-width: 1007px) {
-    
+@media (min-width: 641px) and (max-width: 1007px) {
+   body {
+       font-size: 1.5em;
+       margin: 16px;
+   }
+
+   header p {
+       font-size: xx-large;
+    text-align: center;
+    font-weight: 600;
+}
 }
 
 @media (min-width: 1008px) {

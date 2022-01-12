@@ -5,6 +5,13 @@
   font-family: 'Ubuntu';
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  /* align-content: flex-end; */
+  align-items: center;
+}
+
 
 .header-img {
   width: 70px;
@@ -23,6 +30,7 @@
 
 .header-container {
   display: flex;
+  width: 100%;
   background-color:rgb(34, 33, 33);
   color: white;
   justify-content: space-around;
@@ -40,14 +48,15 @@
 }
 
 .img-container {
-  margin: auto;
+  width: 50%;
+  /* margin: auto; */
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 590px; 
+  /* width: 590px;  */
 }
 
 div {

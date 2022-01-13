@@ -1,3 +1,20 @@
-const sum = (value1, value2) => value1 + value2;
+// const sum = (value1, value2) => (typeof value1 !== 'number' || typeof value2 !== 'number') ? 'Os valores devem ser numéricos' : value1 + value2;
+  
+//   console.log(sum(2, 3));
 
-console.log(sum(45676778, 23423534634))
+const verifyIsNumber = (value1, value2) => {
+    if (typeof value1 !== 'number' || typeof value2 !== 'number') {
+      throw new Error('Os valores devem ser numéricos');
+    }
+  };
+  
+  const sum = (value1, value2) => {
+    try {
+      verifyIsNumber(value1, value2);
+      return value1 + value2;
+    } catch (error) {
+      throw error.message;
+    }
+  };
+  
+  console.log(sum(2, '3'));

@@ -1,7 +1,11 @@
-const fatorial = number => {
-    let comparation = []
-    for (let i = 1; i < 4; i+= 1){
-        comparation.push(i)
-    }
-    console.log(comparation)
-}
+const fatorial = (number) => {
+  let result = 1;
+
+  for (let index = 2; index <= number; index += 1) {
+    result *= index 
+  }
+
+  return result
+};
+
+console.log(fatorial(7));

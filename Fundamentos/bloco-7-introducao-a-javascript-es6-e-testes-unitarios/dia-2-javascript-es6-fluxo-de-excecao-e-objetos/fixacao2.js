@@ -126,14 +126,13 @@
 //   console.log(person)
 
 /* Output
-                  { name: 'Alberto',
-                  lastName: 'Gomes',
-                  age: 23,
-                  job: 'engenheiro',
-                  children: [ 'Maria', 'João' ],
-                  wife: 'Ana'
-                } */
-
+{ name: 'Alberto',
+lastName: 'Gomes',
+age: 23,
+job: 'engenheiro',
+children: [ 'Maria', 'João' ],
+wife: 'Ana'
+} */
 const paises = {
   França: "Paris",
   Brasil: "Brasília",

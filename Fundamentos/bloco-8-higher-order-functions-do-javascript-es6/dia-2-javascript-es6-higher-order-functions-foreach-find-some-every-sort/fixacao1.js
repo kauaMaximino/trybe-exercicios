@@ -5,10 +5,7 @@ const emailListInData = [
     'fabiano@email.com',
   ];
   
-  const showEmailList = (email) => {
-    console.log(`O email ${email} esta cadastrado em nosso banco de dados!`);
-  };
   
   // Adicione seu código aqui
 
-  emailListInData.forEach(showEmailList)
+  emailListInData.forEach(element => element.length > 2 ? console.log(element) : console.log('menor'))

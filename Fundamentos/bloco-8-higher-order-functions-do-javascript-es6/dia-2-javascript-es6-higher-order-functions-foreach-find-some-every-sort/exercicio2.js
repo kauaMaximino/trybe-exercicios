@@ -68,7 +68,7 @@ function smallerName() {
   // escreva aqui o seu código
   books.forEach((book) => {
     if (book.name.length < nameBook.length) {
-      nameBook = book.name;
+      nameBook = book.name; 
     }
   });
 

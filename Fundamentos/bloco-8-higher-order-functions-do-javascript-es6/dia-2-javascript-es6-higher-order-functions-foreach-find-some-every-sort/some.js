@@ -5,8 +5,8 @@ function isBiggerThan10(element, index, array) {
 }
 [2, 5, 8, 1, 4].some(isBiggerThan10); // false
 
-const maiorQue10 = [12, 13, 8, 1, 4].every(element => element > 1); // true
+const maiorQue10 = [12, 13, 8, 1, 4].find(element => console.log(element > 1)); // true
 
 // console.log(maiorQue10)
 
-maiorQue10 ? console.log('todos os números são maiores que 10') : console.log('há números que não são maiores que 10');
+// maiorQue10 ? console.log('todos os números são maiores que 10') : console.log('há números que não são maiores que 10');

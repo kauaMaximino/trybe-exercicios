@@ -4,7 +4,8 @@ const pizzas = [
   'marguerita',
   'portuguesa',
   'brocolis',
-  'pteste'
+  'pteste',
+  'acerola'
 ]
 
 const array1 = [5, 12, 8, 130, 44];
@@ -17,6 +18,6 @@ const array2 = [
   {name: 'amora', quantidy: 10}
 ]
 
-const pizzaSelect = array1.filter(element => element <= 130)
+// const pizzaSelect = pizzas.filter(element => element <= 130)
 
-console.log(pizzaSelect.sort((a, b) => b-a))
+console.log(pizzas.sort())

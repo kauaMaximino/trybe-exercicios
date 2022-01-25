@@ -3,10 +3,10 @@ const persons = [
     { firstName: 'João', lastName: 'Silva' },
     { firstName: 'Antonio', lastName: 'Cabral' },
   ];
-  console.log(persons)
-  const fullNames = persons.map((person) => person.firstName = 'teste');
-  
+
+  const fullNames = persons.toString()
 //   console.log(fullNames); // [ 'Maria Ferreira', 'João Silva', 'Antonio Cabral' ]
+
 
 console.log(fullNames)
 console.log(persons);

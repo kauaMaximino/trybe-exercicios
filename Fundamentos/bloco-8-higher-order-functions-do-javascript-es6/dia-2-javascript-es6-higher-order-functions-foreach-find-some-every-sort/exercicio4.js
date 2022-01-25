@@ -67,5 +67,3 @@ function booksOrderedByReleaseYearDesc() {
     // escreva aqui seu código
      return books.sort((bookA, bookB) => bookA.releaseYear - bookB.releaseYear)
   }
-
-  console.log(booksOrderedByReleaseYearDesc());

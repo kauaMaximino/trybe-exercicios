@@ -1,5 +1,5 @@
-import React from 'react';
-console.log('teste');
+i; // arquivo Image.js
+import React from "react";
 
 class Image extends React.Component {
   render() {

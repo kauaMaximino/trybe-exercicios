@@ -9,9 +9,11 @@ import Footer from './Footer';
 class App extends React.Component {
   render() {
     return(
-      <Header />,
-      <Content />,
-      <Footer />
+      <div>
+        <Header />,
+        <Content />,
+        <Footer />
+      </div>
     )
   }
 }

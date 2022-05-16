@@ -1,5 +1,5 @@
 import { createStore, combineReducers } from 'redux';
-import clickReducer from '../reducers';
+import clickReducer from '../reducers/index';
 const rootReducer = combineReducers({ clickReducer });
 
 const store = createStore(rootReducer);

@@ -1,4 +1,4 @@
-const { connection } = require('./connection');
+const connection = require('./connection');
 
 const getAll = async () => {
   const result = await connection.execute('SELECT id, first_name, last_name FROM authors');

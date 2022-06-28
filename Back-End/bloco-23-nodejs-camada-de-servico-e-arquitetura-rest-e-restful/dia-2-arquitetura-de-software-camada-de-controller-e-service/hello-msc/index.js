@@ -1,22 +1,22 @@
 // index.js
 
-const express = require('express');
-const bodyParser = require('body-parser');
+// const express = require('express');
+// const bodyParser = require('body-parser');
 
-const Author = require('./controllers/Authors');
+// const Author = require('./controllers/Authors');
 
-const app = express();
+// const app = express();
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
-app.get('/authors', Author.getAll);
+// app.get('/authors', Author.getAll);
 
-app.get('/authors/:id', Author.findById);
+// app.get('/authors/:id', Author.findById);
 
-app.post('/authors', Author.createAuthor);
+// app.post('/authors', Author.createAuthor);
 
-const PORT = 3000;
+// const PORT = 3000;
 
-app.listen(PORT, () => {
-  console.log(`listening on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`listening on port ${PORT}`);
+// });

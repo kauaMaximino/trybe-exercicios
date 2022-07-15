@@ -10,7 +10,10 @@ const createUserModel = (sequelize, DataTypes) => {
     password_hash: DataTypes.STRING,
     name: DataTypes.STRING,
     phone: DataTypes.STRING,
+    createdAt: DataTypes.DATE,
+    updatedAt: DataTypes.DATE,
   }, {
+    underscored: true,
     tableName: 'users',
   })
   return User;

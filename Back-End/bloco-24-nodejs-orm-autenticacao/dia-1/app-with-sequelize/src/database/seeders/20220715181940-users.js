@@ -21,6 +21,14 @@ module.exports = {
         created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
         updated_at: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
+      {
+        email: "tes@teste.com",
+        password_hash: "123456",
+        name: "Tesrre",
+        phone: "123456789",
+        created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+        updated_at: Sequelize.literal('CURRENT_TIMESTAMP'),
+      },
     ]
   ),
 

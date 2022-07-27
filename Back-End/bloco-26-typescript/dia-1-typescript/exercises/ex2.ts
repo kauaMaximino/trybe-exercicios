@@ -1,18 +1,20 @@
 // ./Months.ts
 
 enum Months {
-    JANEIRO = "Janeiro",
-    FEVEREIRO = "Fevereiro",
-    MARCO = "Março",
-    ABRIL = "Abril",
-    MAIO = "Maio",
-    JUNHO = "Junho",
-    JULHO = "Julho",
-    AGOSTO = "Agosto",
-    SETEMBRO = "Setembro",
-    OUTUBRO = "Outubro",
-    NOVEMBRO = "Novembro",
-    DEZEMBRO = "Dezembro",
+    JANEIRO = 1,
+    FEVEREIRO = 2,
+    MARCO = 3,
+    ABRIL = 4,
+    MAIO = 5,
+    JUNHO = 6,
+    JULHO = 7,
+    AGOSTO = 8,
+    SETEMBRO = 9,
+    OUTUBRO = 10,
+    NOVEMBRO = 11,
+    DEZEMBRO = 12,
 }
+
+console.log(Months.JANEIRO);
 
 export default Months

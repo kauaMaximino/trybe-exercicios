@@ -3,7 +3,6 @@ interface Hero {
   _power: string;
   inspirador(frase: string): string;
 }
-
 class Hero {
   _name: string;
   _power: string;

@@ -1,19 +1,19 @@
 interface Hero {
-  _name: string;
-  _power: string;
+  name: string;
+  power: string;
   inspirador(frase: string): string;
 }
-class Hero {
-  _name: string;
-  _power: string;
+class Hero implements Hero {
+  name: string;
+  power: string;
 
   constructor(name: string, power: string) {
-    this._name = name;
-    this._power = power;
+    this.name = name;
+    this.power = power;
   }
 
   inspirador(frase: string) {
-    return `${this._name}, com o poder ${this._power}, diz: ${frase}`;
+    return `${this.name}, com o poder ${this.power}, diz: ${frase}`;
   }
 }
 

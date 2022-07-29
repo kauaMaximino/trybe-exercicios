@@ -3,5 +3,5 @@ import * as userModel from '../models/user.models';
 
 export async function getAll() {
   const data = await userModel.getAll();
-  return data;
+  return {status: 200, data};
 }

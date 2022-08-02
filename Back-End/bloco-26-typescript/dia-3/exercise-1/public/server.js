@@ -6,6 +6,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = __importDefault(require("./app"));
 require("express-async-errors");
 const PORT = process.env.PORT || 5000;
+app_1.default.get('/', (request, response) => {
+    response.send('Hello world!');
+});
 app_1.default.listen(PORT, () => {
     console.log(`Server on port ${PORT}`);
 });

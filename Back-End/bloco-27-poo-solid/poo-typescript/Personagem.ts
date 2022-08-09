@@ -2,13 +2,13 @@
 
 class Personagem {
 
-  nome: string;
-  energia: number;
-  vida: number;
-  ataque: number;
-  defesa: number;
-
-  constructor(nome: string, energia: number, vida: number, ataque: number, defesa: number) {
+  constructor(
+    public nome: string,
+    public energia: number,
+    public vida: number,
+    public ataque: number,
+    public defesa: number
+  ) {
     this.nome = nome;
     this.energia = energia;
     this.vida = vida;

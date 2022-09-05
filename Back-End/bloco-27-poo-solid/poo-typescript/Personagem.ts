@@ -1,22 +1,40 @@
 //nome, energia, vida, ataque e defesa
 
-class Personagem {
+export default class Personagem {
 
   constructor(
-    public nome: string,
-    public energia: number,
-    public vida: number,
-    public ataque: number,
-    public defesa: number
-  ) {
+    private nome: string,
+    private energia: number,
+    protected vida: number,
+    protected ataque: number,
+    private defesa: number
+  ) { }
+  
+  status(): void {
+    console.log("Guerreiro")
+    console.log("Nome: ", this.nome)
+    console.log("Energia: ", this.energia)
+    console.log("Ataque: ", this.ataque)
+    console.log("defesa: ", this.defesa)
+  }
+
+  set name(nome: string) {
     this.nome = nome;
-    this.energia = energia;
-    this.vida = vida;
-    this.ataque = ataque;
-    this.defesa = defesa;
   }
 }
 
-const person: Personagem = new Personagem('Personagem', 100, 100, 10, 10);
+export class Guerreiro extends Personagem {
+  constructor(nome: string, energia: number, vida: number, ataque: number, defesa: number) {
+    super(nome, energia, vida, ataque, defesa);
+  }
 
-console.log(person.defesa);
+  status(): void {
+    super.status();
+    console.log("Guerreiro")
+  }
+
+  atacar(personagem: Guerreiro): void {
+    personagem.vida -= this.ataque;
+  }
+
+}

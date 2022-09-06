@@ -1,0 +1,3 @@
+use("aula-filter-operators");
+
+db.filmes.find().sort({ "ano": -1 }, { "titulo": -1 })

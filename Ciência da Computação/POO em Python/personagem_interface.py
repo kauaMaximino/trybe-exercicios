@@ -1,11 +1,7 @@
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 
 class PersonagemInterface(ABC):
 
-    @abstractclassmethod
-    def atacar(self):
-        pass
-
-    @abstractclassmethod
-    def defender(self):
-        pass
+    @abstractmethod
+    def falar(self):
+        raise NotImplementedError
